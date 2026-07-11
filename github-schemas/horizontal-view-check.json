@@ -56,7 +56,7 @@
     },
     {
         "type": "horizontalScrollView",
-        "style": { "height": 200, "marginTop":20, "backgroundColor":"#000" },
+        "style": { "marginTop":20, "backgroundColor":"#000" },
         "children":[
             {
                 "type":"text",

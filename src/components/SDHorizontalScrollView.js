@@ -24,7 +24,7 @@ export default function SDHorizontalScrollView({ style, children, ...props }) {
     <ScrollView
       horizontal={true}
       showsHorizontalScrollIndicator={false}
-      contentContainerStyle={styles.contentContainer}
+      style={[styles.contentContainer, style]}
       decelerationRate="fast"
       {...props}
     >
@@ -35,7 +35,7 @@ export default function SDHorizontalScrollView({ style, children, ...props }) {
 
 const styles = StyleSheet.create({
   contentContainer: {
-    paddingHorizontal: 16,
-    gap: 12,
+    paddingHorizontal: 10,
+    // gap: 12,
   },
 });
