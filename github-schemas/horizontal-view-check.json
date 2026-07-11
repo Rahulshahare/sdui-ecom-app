@@ -8,12 +8,21 @@
       "props": { "pagingEnabled": true },
       "children": [
         {   "type": "image", 
-            "source": "https://images.unsplash.com/vector-1759149046478-4e81e5ea0d9c?q=80&w=500?", 
-            "style": { "width": 300, "height": 200 } 
+            "source": "https://images.unsplash.com/vector-1759149046478-4e81e5ea0d9c?q=80&w=500", 
+            "style": { "width": 300, "height": 200,"marginRight": 12, "borderRadius": 12} 
         },
         {   "type": "image", 
             "source": "https://plus.unsplash.com/premium_vector-1722093079219-48778ce769cd?q=70&w=400", 
-            "style": { "width": 300, "height": 200 } }
+            "style": { "width": 300, "height": 200, "marginRight": 12, "borderRadius": 12 } 
+        },
+        {   "type": "image", 
+            "source": "https://plus.unsplash.com/premium_vector-1722093079219-48778ce769cd?q=70&w=400", 
+            "style": { "width": 300, "height": 200, "marginRight": 12, "borderRadius": 12 } 
+        },
+        {   "type": "image", 
+            "source": "https://plus.unsplash.com/premium_vector-1722093079219-48778ce769cd?q=70&w=400", 
+            "style": { "width": 300, "height": 200, "marginRight": 12, "borderRadius": 12 } 
+        }
       ]
     },
     {
@@ -29,14 +38,14 @@
       "action": { "type": "custom", "handler": "addToCart" }
     },
     {
-      "type": "input",
-      "placeholder": "Email",
-      "props": {
-        "keyboardType": "email-address",
-        "required": true,
-        "errorText": "Valid email required",
-        "helperText": "For order updates"
-      }
+        "type": "input",
+        "placeholder": "Email",
+        "props": {
+            "keyboardType": "email-address",
+            "required": true,
+            "errorText": "Valid email required",
+            "helperText": "For order updates"
+        }
     }
   ]
 }
