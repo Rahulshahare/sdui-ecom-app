@@ -47,6 +47,32 @@
             "errorText": "Valid email required",
             "helperText": "For order updates"
         }
+    },
+    {
+        "type": "horizontalScrollView",
+        "style": { "height": 200, "marginTop":20, "backgroundColor":"#f09f" },
+        "children":[
+            {
+                "type":"text",
+                "content":"One"
+            },
+            {
+                "type":"text",
+                "content":"Two"
+            },
+            {
+                "type":"text",
+                "content":"THREE"
+            },
+            {
+                "type":"text",
+                "content":"FOUR"
+            },
+            {
+                "type":"text",
+                "content":"FIVE"
+            }
+        ]
     }
   ]
 }
