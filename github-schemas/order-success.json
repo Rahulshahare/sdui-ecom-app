@@ -1,0 +1,209 @@
+{
+  "type": "screen",
+  "style": {
+    "flex": 1,
+    "backgroundColor": "#FFFFFF",
+    "padding": 16
+  },
+  "children": [
+    {
+      "type": "scrollView",
+      "style": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "type": "column",
+          "style": {
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "flex-start"
+          },
+          "children": [
+            {
+              "type": "spacer",
+              "props": { "size": 32 }
+            },
+            {
+              "type": "image",
+              "props": {
+                "source": { "uri": "https://example.com/assets/success_check.png" }
+              },
+              "style": {
+                "width": 100,
+                "height": 100,
+                "resizeMode": "contain"
+              }
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 16 }
+            },
+            {
+              "type": "text",
+              "props": {
+                "text": "Order Placed Successfully!"
+              },
+              "style": {
+                "fontSize": 24,
+                "fontWeight": "bold",
+                "color": "#2E7D32",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "props": {
+                "text": "Thank you for your purchase. Your order has been received."
+              },
+              "style": {
+                "fontSize": 14,
+                "color": "#757575",
+                "textAlign": "center",
+                "marginTop": 8
+              }
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "divider",
+              "style": {
+                "height": 1,
+                "backgroundColor": "#E0E0E0",
+                "width": "100%"
+              }
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 16 }
+            },
+            {
+              "type": "row",
+              "style": {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "props": { "text": "Order ID:" },
+                  "style": { "fontSize": 14, "color": "#616161" }
+                },
+                {
+                  "type": "text",
+                  "props": { "text": "#AG-983742" },
+                  "style": { "fontSize": 14, "fontWeight": "bold" }
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 16 }
+            },
+            {
+              "type": "container",
+              "style": {
+                "backgroundColor": "#F5F5F5",
+                "padding": 12,
+                "borderRadius": 8,
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "style": {
+                    "flexDirection": "row",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "props": {
+                        "source": { "uri": "https://example.com/assets/product_thumb.png" }
+                      },
+                      "style": {
+                        "width": 60,
+                        "height": 60,
+                        "borderRadius": 4
+                      }
+                    },
+                    {
+                      "type": "spacer",
+                      "props": { "size": 12 }
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "flexDirection": "column",
+                        "alignItems": "flex-start",
+                        "flex": 1
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "props": { "text": "Premium Wireless Headphones" },
+                          "style": { "fontSize": 16, "fontWeight": "500" }
+                        },
+                        {
+                          "type": "text",
+                          "props": { "text": "Qty: 1" },
+                          "style": { "fontSize": 12, "color": "#757575", "marginTop": 2 }
+                        },
+                        {
+                          "type": "text",
+                          "props": { "text": "$149.99" },
+                          "style": { "fontSize": 14, "fontWeight": "bold", "marginTop": 4 }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 32 }
+            },
+            {
+              "type": "button",
+              "props": {
+                "label": "Track Order",
+                "action": "NAVIGATE_TRACKING"
+              },
+              "style": {
+                "backgroundColor": "#007AFF",
+                "padding": 14,
+                "borderRadius": 8,
+                "width": "100%",
+                "alignItems": "center"
+              }
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 12 }
+            },
+            {
+              "type": "button",
+              "props": {
+                "label": "Continue Shopping",
+                "action": "NAVIGATE_HOME"
+              },
+              "style": {
+                "backgroundColor": "transparent",
+                "borderWidth": 1,
+                "borderColor": "#007AFF",
+                "padding": 14,
+                "borderRadius": 8,
+                "width": "100%",
+                "alignItems": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
