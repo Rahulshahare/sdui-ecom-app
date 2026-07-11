@@ -1,0 +1,188 @@
+{
+  "type": "scrollView",
+  "style": {
+    "flex": 1,
+    "backgroundColor": "#f5f5f5"
+  },
+  "children": [
+    {
+      "type": "container",
+      "style": {
+        "padding": 16,
+        "backgroundColor": "#007AFF"
+      },
+      "children": [
+        {
+          "type": "text",
+          "content": "Summer Sale",
+          "style": {
+            "fontSize": 28,
+            "fontWeight": "bold",
+            "color": "#fff"
+          }
+        },
+        {
+          "type": "text",
+          "content": "Up to 50% off on selected items",
+          "style": {
+            "fontSize": 16,
+            "color": "rgba(255,255,255,0.8)",
+            "marginTop": 4
+          }
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 16
+      },
+      "children": [
+        {
+          "type": "row",
+          "style": {
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "marginBottom": 12
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "Featured Products",
+              "style": {
+                "fontSize": 20,
+                "fontWeight": "bold"
+              }
+            },
+            {
+              "type": "button",
+              "text": "See All",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#007AFF",
+                "fontSize": 14
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-list",
+                  "title": "All Products"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "style": {
+            "flexWrap": "wrap",
+            "marginHorizontal": -8
+          },
+          "children": [
+            {
+              "type": "productCard",
+              "product": {
+                "id": "1",
+                "name": "Wireless Bluetooth Headphones",
+                "price": 79.99,
+                "originalPrice": 99.99,
+                "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+                "badge": "SALE",
+                "rating": 4.5
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "2",
+                "name": "Smart Watch Series 7",
+                "price": 299.00,
+                "originalPrice": 349.00,
+                "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+                "badge": "HOT",
+                "rating": 4.8
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 16
+      },
+      "children": [
+        {
+          "type": "text",
+          "content": "Categories",
+          "style": {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 12
+          }
+        },
+        {
+          "type": "row",
+          "style": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "type": "button",
+              "text": "Electronics",
+              "style": {
+                "backgroundColor": "#34C759",
+                "flex": 1
+              }
+            },
+            {
+              "type": "button",
+              "text": "Fashion",
+              "style": {
+                "backgroundColor": "#FF9500",
+                "flex": 1
+              }
+            },
+            {
+              "type": "button",
+              "text": "Home",
+              "style": {
+                "backgroundColor": "#5856D6",
+                "flex": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
