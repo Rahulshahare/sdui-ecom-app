@@ -30,47 +30,69 @@ export function renderNode(node, index = 0, onAction = null) {
     );
   }
 
+  // Build props — node.props FIRST (lowest priority)
   const props = {
     key: `${node.type}-${index}-${node.id || Math.random().toString(36).substr(2, 9)}`,
     ...node.props,
-    style: node.style,
-    action: node.action,
     onAction: onAction,
   };
 
+  // Handle children recursively
   if (node.children && Array.isArray(node.children)) {
     props.children = node.children.map((child, childIndex) => 
       renderNode(child, childIndex, onAction)
     );
   }
 
+  // Handle list items
   if (node.type === 'list' && node.items) {
     props.items = node.items;
     props.renderItem = (item, itemIndex) => renderNode(item, itemIndex, onAction);
   }
 
+  // Handle product data
   if (node.type === 'productCard' && node.product) {
     props.product = node.product;
   }
 
+  // Handle content for text
   if (node.type === 'text' && node.content) {
     props.content = node.content;
   }
 
+  // Handle source for image
   if (node.type === 'image' && node.source) {
     props.source = node.source;
   }
 
+  // Handle text for button
   if (node.type === 'button' && node.text) {
     props.text = node.text;
   }
 
+  // Handle icon for button
+  if (node.type === 'button' && node.icon) {
+    props.icon = node.icon;
+  }
+
+  // Handle placeholder for input
   if (node.type === 'input' && node.placeholder) {
     props.placeholder = node.placeholder;
   }
 
+  // Handle text for badge
   if (node.type === 'badge' && node.text) {
     props.text = node.text;
+  }
+
+  // Handle style LAST (highest priority — overrides node.props)
+  if (node.style) {
+    props.style = node.style;
+  }
+
+  // Handle action LAST (highest priority)
+  if (node.action) {
+    props.action = node.action;
   }
 
   return <Component {...props} />;
