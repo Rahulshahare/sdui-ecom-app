@@ -51,7 +51,7 @@
     {
         "type":"text",
         "content":"HORIZONTAL SCROLL VIEW",
-        "style": { "fontSize": 14, "fontWeight": "600", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12, "color":"#fff" }
+        "style": { "fontSize": 15, "fontWeight": "600", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 10, "color":"#a0a0a0" }
 
     },
     {
