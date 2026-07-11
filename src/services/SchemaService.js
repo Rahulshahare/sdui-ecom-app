@@ -1,7 +1,7 @@
 import { Logger } from '../utils/Logger';
 import { CacheService } from './CacheService';
 
-const GITHUB_BASE_URL = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/github-schemas';
+const GITHUB_BASE_URL = 'https://raw.githubusercontent.com/Rahulshahare/sdui-ecom-app/refs/heads/master/github-schemas';
 
 export const SchemaService = {
   async fetchScreen(screenName, forceRefresh = false) {
