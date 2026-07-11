@@ -1,0 +1,295 @@
+{
+  "type": "scrollView",
+  "style": {
+    "flex": 1,
+    "backgroundColor": "#f5f5f5"
+  },
+  "children": [
+    {
+      "type": "container",
+      "style": {
+        "padding": 16,
+        "paddingTop": 20,
+        "backgroundColor": "#fff"
+      },
+      "children": [
+        {
+          "type": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": 12,
+            "marginBottom": 16
+          },
+          "children": [
+            {
+              "type": "button",
+              "text": "←",
+              "style": {
+                "width": 40,
+                "height": 40,
+                "borderRadius": 20,
+                "backgroundColor": "#f0f0f0",
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#333",
+                "fontSize": 18
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "Home"
+              }
+            },
+            {
+              "type": "text",
+              "content": "All Products",
+              "style": {
+                "fontSize": 20,
+                "fontWeight": "bold",
+                "color": "#1a1a1a",
+                "flex": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "placeholder": "Search products...",
+          "style": {
+            "backgroundColor": "#f5f5f5",
+            "borderColor": "transparent"
+          }
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 16,
+        "paddingTop": 8
+      },
+      "children": [
+        {
+          "type": "row",
+          "style": {
+            "gap": 8,
+            "marginBottom": 16
+          },
+          "children": [
+            {
+              "type": "badge",
+              "text": "All",
+              "style": {
+                "backgroundColor": "#007AFF",
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "borderRadius": 20
+              },
+              "textStyle": {
+                "fontSize": 14
+              }
+            },
+            {
+              "type": "badge",
+              "text": "Electronics",
+              "style": {
+                "backgroundColor": "#f0f0f0",
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "borderRadius": 20
+              },
+              "textStyle": {
+                "color": "#666",
+                "fontSize": 14,
+                "fontWeight": "400"
+              }
+            },
+            {
+              "type": "badge",
+              "text": "Fashion",
+              "style": {
+                "backgroundColor": "#f0f0f0",
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "borderRadius": 20
+              },
+              "textStyle": {
+                "color": "#666",
+                "fontSize": 14,
+                "fontWeight": "400"
+              }
+            },
+            {
+              "type": "badge",
+              "text": "Home",
+              "style": {
+                "backgroundColor": "#f0f0f0",
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "borderRadius": 20
+              },
+              "textStyle": {
+                "color": "#666",
+                "fontSize": 14,
+                "fontWeight": "400"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "style": {
+            "flexWrap": "wrap",
+            "marginHorizontal": -8
+          },
+          "children": [
+            {
+              "type": "productCard",
+              "product": {
+                "id": "1",
+                "name": "Wireless Bluetooth Headphones",
+                "price": 79.99,
+                "originalPrice": 99.99,
+                "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+                "badge": "SALE",
+                "rating": 4.5
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "2",
+                "name": "Smart Watch Series 7",
+                "price": 299.00,
+                "originalPrice": 349.00,
+                "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+                "badge": "HOT",
+                "rating": 4.8
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "3",
+                "name": "Running Shoes Pro",
+                "price": 129.99,
+                "originalPrice": 159.99,
+                "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+                "badge": "NEW",
+                "rating": 4.3
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "4",
+                "name": "Leather Backpack",
+                "price": 89.99,
+                "originalPrice": null,
+                "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+                "badge": null,
+                "rating": 4.6
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "5",
+                "name": "Portable Speaker",
+                "price": 49.99,
+                "originalPrice": 69.99,
+                "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400",
+                "badge": "SALE",
+                "rating": 4.2
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            },
+            {
+              "type": "productCard",
+              "product": {
+                "id": "6",
+                "name": "Sunglasses Classic",
+                "price": 159.00,
+                "originalPrice": 199.00,
+                "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+                "badge": "HOT",
+                "rating": 4.7
+              },
+              "style": {
+                "flex": 1,
+                "minWidth": 160
+              },
+              "action": {
+                "type": "navigate",
+                "screen": "SDUIScreen",
+                "params": {
+                  "screenName": "product-detail",
+                  "title": "Product Detail"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
