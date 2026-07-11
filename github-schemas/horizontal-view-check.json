@@ -54,23 +54,32 @@
         "children":[
             {
                 "type":"text",
-                "content":"One"
+                "content":"One",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
             },
             {
                 "type":"text",
-                "content":"Two"
+                "content":"Two",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
             },
             {
                 "type":"text",
-                "content":"THREE"
+                "content":"THREE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
             },
             {
                 "type":"text",
-                "content":"FOUR"
+                "content":"FOUR",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
             },
             {
                 "type":"text",
-                "content":"FIVE"
+                "content":"FIVE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
             }
         ]
     }
