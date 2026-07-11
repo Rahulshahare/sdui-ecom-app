@@ -50,35 +50,59 @@
     },
     {
         "type": "horizontalScrollView",
-        "style": { "height": 200, "marginTop":20, "backgroundColor":"#f09f" },
+        "style": { "height": 200, "marginTop":20, "backgroundColor":"#000" },
         "children":[
             {
                 "type":"text",
                 "content":"One",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
             },
             {
                 "type":"text",
                 "content":"Two",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
 
             },
             {
                 "type":"text",
                 "content":"THREE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
 
             },
             {
                 "type":"text",
                 "content":"FOUR",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
 
             },
             {
                 "type":"text",
                 "content":"FIVE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+
+            },
+            {
+                "type":"text",
+                "content":"Two",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+
+            },
+            {
+                "type":"text",
+                "content":"THREE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+
+            },
+            {
+                "type":"text",
+                "content":"FOUR",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+
+            },
+            {
+                "type":"text",
+                "content":"FIVE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
 
             }
         ]
