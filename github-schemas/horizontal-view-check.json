@@ -49,6 +49,12 @@
         }
     },
     {
+        "type":"text",
+        "content":"HORIZONTAL SCROLL VIEW",
+        "style": { "fontSize": 14, "fontWeight": "600", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12, "color":"#fff" }
+
+    },
+    {
         "type": "horizontalScrollView",
         "style": { "height": 200, "marginTop":20, "backgroundColor":"#000" },
         "children":[
