@@ -1,0 +1,37 @@
+{
+  "type": "scrollView",
+  "style": { "flex": 1, "backgroundColor": "#fff" },
+  "children": [
+    {
+      "type": "horizontalScrollView",
+      "style": { "height": 200 },
+      "props": { "pagingEnabled": true },
+      "children": [
+        { "type": "image", "source": "https://...", "style": { "width": 300, "height": 200 } },
+        { "type": "image", "source": "https://...", "style": { "width": 300, "height": 200 } }
+      ]
+    },
+    {
+      "type": "text",
+      "content": "Very long product name that truncates after two lines...",
+      "props": { "numberOfLines": 2, "ellipsizeMode": "tail" }
+    },
+    {
+      "type": "button",
+      "text": "Add to Cart",
+      "icon": "🛒",
+      "props": { "loading": false, "disabled": false },
+      "action": { "type": "custom", "handler": "addToCart" }
+    },
+    {
+      "type": "input",
+      "placeholder": "Email",
+      "props": {
+        "keyboardType": "email-address",
+        "required": true,
+        "errorText": "Valid email required",
+        "helperText": "For order updates"
+      }
+    }
+  ]
+}

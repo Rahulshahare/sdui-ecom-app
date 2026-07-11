@@ -492,6 +492,34 @@
               "title": "Checkout"
             }
           }
+        },
+        {
+          "type": "spacer",
+          "style": {
+            "height": 12
+          }
+        },
+        {
+          "type": "button",
+          "text": "Horizontal view",
+          "style": {
+            "backgroundColor": "#34C759",
+            "paddingVertical": 16,
+            "borderRadius": 12,
+            "marginBottom":30
+          },
+          "textStyle": {
+            "fontSize": 18,
+            "fontWeight": "bold"
+          },
+          "action": {
+            "type": "navigate",
+            "screen": "SDUIScreen",
+            "params": {
+              "screenName": "horizontal-view-check",
+              "title": "Horizontal view"
+            }
+          }
         }
       ]
     }
