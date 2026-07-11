@@ -4,7 +4,7 @@
   "children": [
     {
       "type": "horizontalScrollView",
-      "style": { "height": 200 },
+      "style": { "height": 200, "marginTop":20 },
       "props": { "pagingEnabled": true },
       "children": [
         {   "type": "image", 
@@ -35,7 +35,8 @@
       "text": "Add to Cart",
       "icon": "🛒",
       "props": { "loading": false, "disabled": false },
-      "action": { "type": "custom", "handler": "addToCart" }
+      "action": { "type": "custom", "handler": "addToCart" },
+      "style":{"marginTop":10,"marginBottom":10}
     },
     {
         "type": "input",
