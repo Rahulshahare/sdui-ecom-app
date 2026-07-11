@@ -1,0 +1,623 @@
+{
+  "type": "screen",
+  "style": {
+    "flex": 1,
+    "backgroundColor": "#FFFFFF",
+    "padding": 16
+  },
+  "children": [
+    {
+      "type": "scrollView",
+      "style": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "type": "column",
+          "style": {
+            "alignItems": "center",
+            "justifyContent": "flex-start"
+          },
+          "children": [
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "row",
+              "style": {
+                "justifyContent": "space-between",
+                "width": "100%",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "text": "←",
+                  "action": {
+                    "type": "navigate",
+                    "screen": "SDUIScreen",
+                    "params": {
+                      "screenName": "order-success",
+                      "title": "Order Success"
+                    }
+                  },
+                  "style": {
+                    "backgroundColor": "transparent",
+                    "padding": 0,
+                    "width": 40,
+                    "height": 40
+                  },
+                  "textStyle": {
+                    "color": "#333",
+                    "fontSize": 20
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Track Order",
+                  "style": {
+                    "fontSize": 20,
+                    "fontWeight": "bold",
+                    "color": "#1a1a1a"
+                  }
+                },
+                {
+                  "type": "container",
+                  "style": {
+                    "width": 40
+                  }
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "container",
+              "style": {
+                "backgroundColor": "#F5F5F5",
+                "padding": 16,
+                "borderRadius": 12,
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "style": {
+                    "justifyContent": "space-between",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "children": [
+                        {
+                          "type": "text",
+                          "content": "Order #AG-983742",
+                          "style": {
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "color": "#1a1a1a"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "content": "Placed on Jul 11, 2026",
+                          "style": {
+                            "fontSize": 13,
+                            "color": "#757575",
+                            "marginTop": 4
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "badge",
+                      "text": "In Transit",
+                      "style": {
+                        "backgroundColor": "#FF9500"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "container",
+              "style": {
+                "width": "100%",
+                "paddingHorizontal": 8
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "style": {
+                        "alignItems": "flex-start"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "width": 32
+                          },
+                          "children": [
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 24,
+                                "height": 24,
+                                "borderRadius": 12,
+                                "backgroundColor": "#34C759",
+                                "justifyContent": "center",
+                                "alignItems": "center"
+                              },
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "content": "✓",
+                                  "style": {
+                                    "color": "#fff",
+                                    "fontSize": 14,
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 2,
+                                "height": 50,
+                                "backgroundColor": "#34C759"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "style": {
+                            "flex": 1,
+                            "paddingLeft": 12,
+                            "paddingTop": 2
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "content": "Order Placed",
+                              "style": {
+                                "fontSize": 16,
+                                "fontWeight": "600",
+                                "color": "#1a1a1a"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Jul 11, 2026 • 2:30 PM",
+                              "style": {
+                                "fontSize": 13,
+                                "color": "#757575",
+                                "marginTop": 2
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "style": {
+                        "alignItems": "flex-start"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "width": 32
+                          },
+                          "children": [
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 24,
+                                "height": 24,
+                                "borderRadius": 12,
+                                "backgroundColor": "#34C759",
+                                "justifyContent": "center",
+                                "alignItems": "center"
+                              },
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "content": "✓",
+                                  "style": {
+                                    "color": "#fff",
+                                    "fontSize": 14,
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 2,
+                                "height": 50,
+                                "backgroundColor": "#34C759"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "style": {
+                            "flex": 1,
+                            "paddingLeft": 12,
+                            "paddingTop": 2
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "content": "Order Confirmed",
+                              "style": {
+                                "fontSize": 16,
+                                "fontWeight": "600",
+                                "color": "#1a1a1a"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Jul 11, 2026 • 2:35 PM",
+                              "style": {
+                                "fontSize": 13,
+                                "color": "#757575",
+                                "marginTop": 2
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "style": {
+                        "alignItems": "flex-start"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "width": 32
+                          },
+                          "children": [
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 24,
+                                "height": 24,
+                                "borderRadius": 12,
+                                "backgroundColor": "#34C759",
+                                "justifyContent": "center",
+                                "alignItems": "center"
+                              },
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "content": "✓",
+                                  "style": {
+                                    "color": "#fff",
+                                    "fontSize": 14,
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 2,
+                                "height": 50,
+                                "backgroundColor": "#007AFF"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "style": {
+                            "flex": 1,
+                            "paddingLeft": 12,
+                            "paddingTop": 2
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "content": "Shipped",
+                              "style": {
+                                "fontSize": 16,
+                                "fontWeight": "600",
+                                "color": "#1a1a1a"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Jul 12, 2026 • 9:15 AM",
+                              "style": {
+                                "fontSize": 13,
+                                "color": "#757575",
+                                "marginTop": 2
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Carrier: FedEx • Tracking: 7845123690",
+                              "style": {
+                                "fontSize": 12,
+                                "color": "#007AFF",
+                                "marginTop": 4
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "style": {
+                        "alignItems": "flex-start"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "width": 32
+                          },
+                          "children": [
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 24,
+                                "height": 24,
+                                "borderRadius": 12,
+                                "backgroundColor": "#E0E0E0",
+                                "justifyContent": "center",
+                                "alignItems": "center"
+                              },
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "content": "4",
+                                  "style": {
+                                    "color": "#999",
+                                    "fontSize": 12,
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 2,
+                                "height": 50,
+                                "backgroundColor": "#E0E0E0"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "style": {
+                            "flex": 1,
+                            "paddingLeft": 12,
+                            "paddingTop": 2
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "content": "Out for Delivery",
+                              "style": {
+                                "fontSize": 16,
+                                "fontWeight": "600",
+                                "color": "#999"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Expected Jul 14, 2026",
+                              "style": {
+                                "fontSize": 13,
+                                "color": "#999",
+                                "marginTop": 2
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "style": {
+                        "alignItems": "flex-start"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "width": 32
+                          },
+                          "children": [
+                            {
+                              "type": "container",
+                              "style": {
+                                "width": 24,
+                                "height": 24,
+                                "borderRadius": 12,
+                                "backgroundColor": "#E0E0E0",
+                                "justifyContent": "center",
+                                "alignItems": "center"
+                              },
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "content": "5",
+                                  "style": {
+                                    "color": "#999",
+                                    "fontSize": 12,
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "style": {
+                            "flex": 1,
+                            "paddingLeft": 12,
+                            "paddingTop": 2
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "content": "Delivered",
+                              "style": {
+                                "fontSize": 16,
+                                "fontWeight": "600",
+                                "color": "#999"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "content": "Expected by Jul 14, 2026",
+                              "style": {
+                                "fontSize": 13,
+                                "color": "#999",
+                                "marginTop": 2
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "container",
+              "style": {
+                "backgroundColor": "#F5F5F5",
+                "padding": 16,
+                "borderRadius": 12,
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "content": "Shipping Address",
+                  "style": {
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "color": "#1a1a1a",
+                    "marginBottom": 8
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "John Doe",
+                  "style": {
+                    "fontSize": 14,
+                    "color": "#333"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "123 Main Street, Apt 4B",
+                  "style": {
+                    "fontSize": 14,
+                    "color": "#666",
+                    "marginTop": 2
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "New York, NY 10001",
+                  "style": {
+                    "fontSize": 14,
+                    "color": "#666",
+                    "marginTop": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 24 }
+            },
+            {
+              "type": "button",
+              "text": "Back to Home",
+              "action": {
+                "type": "navigate",
+                "screen": "Home"
+              },
+              "style": {
+                "backgroundColor": "#007AFF",
+                "padding": 16,
+                "borderRadius": 12,
+                "width": "100%",
+                "alignItems": "center"
+              }
+            },
+            {
+              "type": "spacer",
+              "props": { "size": 12 }
+            },
+            {
+              "type": "button",
+              "text": "Need Help?",
+              "action": {
+                "type": "openUrl",
+                "url": "https://example.com/support"
+              },
+              "style": {
+                "backgroundColor": "transparent",
+                "borderWidth": 1,
+                "borderColor": "#007AFF",
+                "padding": 16,
+                "borderRadius": 12,
+                "width": "100%",
+                "alignItems": "center"
+              },
+              "textStyle": {
+                "color": "#007AFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
