@@ -36,7 +36,7 @@
       "icon": "🛒",
       "props": { "loading": false, "disabled": false },
       "action": { "type": "custom", "handler": "addToCart" },
-      "style":{"marginTop":10,"marginBottom":10}
+      "style":{"marginTop":10,"marginBottom":50}
     },
     {
         "type": "input",
