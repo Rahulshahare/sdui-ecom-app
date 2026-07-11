@@ -22,11 +22,11 @@
           "children": [
             {
               "type": "spacer",
-              "props": { "size": 32 }
+              "style": { "height": 32 }
             },
             {
               "type": "image",
-              "source":"https://example.com/assets/success_check.png",
+              "source":"https://img.favpng.com/4/10/23/computer-icons-icon-design-png-favpng-BtCsVUYyXRAaTMmP3SsG68Q7y.jpg",
               "style": {
                 "width": 100,
                 "height": 100,
@@ -35,7 +35,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 16 }
+              "style": { "height": 16 }
             },
             {
               "type": "text",
@@ -59,7 +59,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 24 }
+              "style": { "height": 24 } 
             },
             {
               "type": "divider",
@@ -71,7 +71,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 16 }
+              "style": { "height": 16 }
             },
             {
               "type": "row",
@@ -95,7 +95,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 16 }
+              "style": { "height": 16 }
             },
             {
               "type": "container",
@@ -124,7 +124,7 @@
                     },
                     {
                       "type": "spacer",
-                      "props": { "size": 12 }
+                      "style": { "height": 12 }
                     },
                     {
                       "type": "column",
@@ -157,7 +157,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 32 }
+              "style": { "height": 32 }
             },
             {
               "type": "button",
@@ -180,7 +180,7 @@
             },
             {
               "type": "spacer",
-              "props": { "size": 12 }
+              "style": { "height": 12 }
             },
             {
               "type": "button",
@@ -201,7 +201,8 @@
                 "borderRadius": 8,
                 "width": "100%",
                 "alignItems": "center"
-              }
+              },
+              "textStyle": { "color": "#007AFF" }
             }
           ]
         }
