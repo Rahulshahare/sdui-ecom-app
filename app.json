@@ -19,6 +19,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "62608473-1c6b-45ad-96e0-237987b8bf8e"
+      }
+    },
+    "owner": "rahulshahare91",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "plugins": [
+      "expo-updates"
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/62608473-1c6b-45ad-96e0-237987b8bf8e",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 30000
     }
   }
 }
