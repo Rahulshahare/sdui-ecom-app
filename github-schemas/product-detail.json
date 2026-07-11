@@ -1,0 +1,499 @@
+{
+  "type": "scrollView",
+  "style": {
+    "flex": 1,
+    "backgroundColor": "#f5f5f5"
+  },
+  "children": [
+    {
+      "type": "container",
+      "style": {
+        "padding": 0,
+        "backgroundColor": "#fff"
+      },
+      "children": [
+        {
+          "type": "image",
+          "source": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600",
+          "style": {
+            "width": "100%",
+            "height": 350,
+            "borderRadius": 0
+          }
+        },
+        {
+          "type": "row",
+          "style": {
+            "position": "absolute",
+            "top": 16,
+            "right": 16,
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "button",
+              "text": "♡",
+              "style": {
+                "backgroundColor": "rgba(255,255,255,0.9)",
+                "width": 40,
+                "height": 40,
+                "borderRadius": 20,
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#FF3B30",
+                "fontSize": 20
+              },
+              "action": {
+                "type": "custom",
+                "handler": "addToWishlist",
+                "payload": {
+                  "productId": "1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "↗",
+              "style": {
+                "backgroundColor": "rgba(255,255,255,0.9)",
+                "width": 40,
+                "height": 40,
+                "borderRadius": 20,
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#333",
+                "fontSize": 18
+              },
+              "action": {
+                "type": "openUrl",
+                "url": "https://example.com/share"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 20,
+        "backgroundColor": "#fff",
+        "marginTop": -20,
+        "borderTopLeftRadius": 24,
+        "borderTopRightRadius": 24
+      },
+      "children": [
+        {
+          "type": "row",
+          "style": {
+            "justifyContent": "space-between",
+            "alignItems": "flex-start",
+            "marginBottom": 12
+          },
+          "children": [
+            {
+              "type": "column",
+              "style": {
+                "flex": 1,
+                "paddingRight": 12
+              },
+              "children": [
+                {
+                  "type": "badge",
+                  "text": "BESTSELLER",
+                  "style": {
+                    "backgroundColor": "#FF9500",
+                    "marginBottom": 8
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Wireless Bluetooth Headphones",
+                  "style": {
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                    "color": "#1a1a1a",
+                    "lineHeight": 32
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "style": {
+                "alignItems": "flex-end"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "content": "★ 4.5",
+                  "style": {
+                    "fontSize": 16,
+                    "color": "#FF9500",
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "(2,847 reviews)",
+                  "style": {
+                    "fontSize": 12,
+                    "color": "#999",
+                    "marginTop": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "style": {
+            "alignItems": "baseline",
+            "gap": 12,
+            "marginBottom": 16
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "$79.99",
+              "style": {
+                "fontSize": 32,
+                "fontWeight": "bold",
+                "color": "#007AFF"
+              }
+            },
+            {
+              "type": "text",
+              "content": "$99.99",
+              "style": {
+                "fontSize": 18,
+                "color": "#999",
+                "textDecorationLine": "line-through"
+              }
+            },
+            {
+              "type": "badge",
+              "text": "20% OFF",
+              "style": {
+                "backgroundColor": "#34C759"
+              }
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "style": {
+            "marginVertical": 16
+          }
+        },
+        {
+          "type": "text",
+          "content": "Description",
+          "style": {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "color": "#1a1a1a",
+            "marginBottom": 8
+          }
+        },
+        {
+          "type": "text",
+          "content": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and crystal-clear sound quality. Features comfortable over-ear design with memory foam cushions and Bluetooth 5.0 connectivity.",
+          "style": {
+            "fontSize": 15,
+            "color": "#666",
+            "lineHeight": 24
+          }
+        },
+        {
+          "type": "spacer",
+          "style": {
+            "height": 20
+          }
+        },
+        {
+          "type": "text",
+          "content": "Select Color",
+          "style": {
+            "fontSize": 16,
+            "fontWeight": "600",
+            "color": "#1a1a1a",
+            "marginBottom": 12
+          }
+        },
+        {
+          "type": "row",
+          "style": {
+            "gap": 12,
+            "marginBottom": 20
+          },
+          "children": [
+            {
+              "type": "button",
+              "text": "Black",
+              "style": {
+                "backgroundColor": "#1a1a1a",
+                "flex": 1,
+                "borderWidth": 2,
+                "borderColor": "#007AFF"
+              }
+            },
+            {
+              "type": "button",
+              "text": "White",
+              "style": {
+                "backgroundColor": "#f0f0f0",
+                "flex": 1
+              },
+              "textStyle": {
+                "color": "#333"
+              }
+            },
+            {
+              "type": "button",
+              "text": "Blue",
+              "style": {
+                "backgroundColor": "#007AFF",
+                "flex": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Quantity",
+          "style": {
+            "fontSize": 16,
+            "fontWeight": "600",
+            "color": "#1a1a1a",
+            "marginBottom": 12
+          }
+        },
+        {
+          "type": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": 16,
+            "marginBottom": 24
+          },
+          "children": [
+            {
+              "type": "button",
+              "text": "−",
+              "style": {
+                "width": 40,
+                "height": 40,
+                "borderRadius": 20,
+                "backgroundColor": "#f0f0f0",
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#333",
+                "fontSize": 20
+              }
+            },
+            {
+              "type": "text",
+              "content": "1",
+              "style": {
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "width": 40,
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "button",
+              "text": "+",
+              "style": {
+                "width": 40,
+                "height": 40,
+                "borderRadius": 20,
+                "backgroundColor": "#f0f0f0",
+                "padding": 0
+              },
+              "textStyle": {
+                "color": "#333",
+                "fontSize": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "style": {
+            "marginVertical": 8
+          }
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 20,
+        "backgroundColor": "#fff",
+        "marginTop": 8
+      },
+      "children": [
+        {
+          "type": "text",
+          "content": "Delivery & Returns",
+          "style": {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "color": "#1a1a1a",
+            "marginBottom": 12
+          }
+        },
+        {
+          "type": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": 12,
+            "marginBottom": 8
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "🚚",
+              "style": {
+                "fontSize": 24
+              }
+            },
+            {
+              "type": "column",
+              "style": {
+                "flex": 1
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "content": "Free Delivery",
+                  "style": {
+                    "fontSize": 15,
+                    "fontWeight": "600",
+                    "color": "#1a1a1a"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Arrives by Mon, Jul 14",
+                  "style": {
+                    "fontSize": 13,
+                    "color": "#666"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": 12
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "↩",
+              "style": {
+                "fontSize": 24
+              }
+            },
+            {
+              "type": "column",
+              "style": {
+                "flex": 1
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "content": "30-Day Returns",
+                  "style": {
+                    "fontSize": 15,
+                    "fontWeight": "600",
+                    "color": "#1a1a1a"
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "Hassle-free return policy",
+                  "style": {
+                    "fontSize": 13,
+                    "color": "#666"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "style": {
+        "padding": 20,
+        "paddingBottom": 40,
+        "backgroundColor": "#fff",
+        "marginTop": 8
+      },
+      "children": [
+        {
+          "type": "button",
+          "text": "Add to Cart — $79.99",
+          "style": {
+            "backgroundColor": "#007AFF",
+            "paddingVertical": 16,
+            "borderRadius": 12
+          },
+          "textStyle": {
+            "fontSize": 18,
+            "fontWeight": "bold"
+          },
+          "action": {
+            "type": "custom",
+            "handler": "addToCart",
+            "payload": {
+              "productId": "1",
+              "name": "Wireless Bluetooth Headphones",
+              "price": 79.99,
+              "quantity": 1,
+              "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+            }
+          }
+        },
+        {
+          "type": "spacer",
+          "style": {
+            "height": 12
+          }
+        },
+        {
+          "type": "button",
+          "text": "Buy Now",
+          "style": {
+            "backgroundColor": "#34C759",
+            "paddingVertical": 16,
+            "borderRadius": 12
+          },
+          "textStyle": {
+            "fontSize": 18,
+            "fontWeight": "bold"
+          },
+          "action": {
+            "type": "navigate",
+            "screen": "SDUIScreen",
+            "params": {
+              "screenName": "checkout",
+              "title": "Checkout"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
