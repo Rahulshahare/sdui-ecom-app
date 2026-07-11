@@ -6,11 +6,14 @@ export default function SDButton({ text, style, textStyle, action, onAction, chi
   
   const handlePress = () => {
     Logger.info('Button pressed:', text);
-    
     if (action && onAction) {
       onAction(action);
     }
   };
+
+  // Auto-detect if background is transparent/light for text color
+  const isTransparent = style?.backgroundColor === 'transparent';
+  const autoTextColor = isTransparent ? '#007AFF' : '#FFFFFF';
 
   return (
     <Pressable
@@ -23,7 +26,11 @@ export default function SDButton({ text, style, textStyle, action, onAction, chi
       android_ripple={{ color: 'rgba(0,0,0,0.1)' }}
       {...props}
     >
-      <Text style={[styles.defaultText, textStyle]}>
+      <Text style={[
+        styles.defaultText, 
+        { color: autoTextColor },
+        textStyle
+      ]}>
         {text || children}
       </Text>
     </Pressable>
@@ -40,7 +47,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   defaultText: {
-    color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '600',
   },
