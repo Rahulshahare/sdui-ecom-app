@@ -1,7 +1,8 @@
 import { Logger } from '../utils/Logger';
 import { CacheService } from './CacheService';
 
-const GITHUB_BASE_URL = 'https://raw.githubusercontent.com/Rahulshahare/sdui-ecom-app/refs/heads/master/github-schemas';
+// Export for hot reload hook
+export const GITHUB_BASE_URL = 'https://raw.githubusercontent.com/Rahulshahare/sdui-ecom-app/refs/heads/master/github-schemas';
 
 export const SchemaService = {
   async fetchScreen(screenName, forceRefresh = false) {
