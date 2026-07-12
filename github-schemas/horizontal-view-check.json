@@ -36,7 +36,18 @@
       "icon": "🛒",
       "props": { "loading": false, "disabled": false },
       "action": { "type": "custom", "handler": "addToCart" },
-      "style":{"marginTop":10,"marginBottom":50}
+      "style": {
+                "backgroundColor": "transparent",
+                "borderWidth": 1,
+                "borderColor": "#007AFF",
+                "padding": 16,
+                "borderRadius": 12,
+                "width": "100%",
+                "alignItems": "center"
+          },
+          "textStyle": {
+                "color": "#007AFF"
+          }
     },
     {
         "type": "input",
