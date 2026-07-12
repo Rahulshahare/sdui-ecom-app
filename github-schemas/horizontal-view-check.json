@@ -4,7 +4,7 @@
   "children": [
     {
       "type": "horizontalScrollView",
-      "style": { "height": 200, "marginTop":20, "backgroundColor":"#f09f" },
+      "style": { "height": 200, "marginTop":2, "backgroundColor":"#fff" },
       "props": { "pagingEnabled": true },
       "children": [
         {   "type": "image", 
@@ -45,7 +45,7 @@
       "type": "text",
       "content": "Very long product name that truncates after two lines...",
       "props": { "numberOfLines": 2, "ellipsizeMode": "tail" },
-      "style":{"marginRight":15,"marginLeft":15}
+      "style":{"margin":15,"padding":15}
     },
     {
       "type": "button",
@@ -81,7 +81,7 @@
     {
         "type":"text",
         "content":"HORIZONTAL SCROLL VIEW",
-        "style": { "fontSize": 15, "fontWeight": "600", "padding": 20,  "backgroundColor":"#a0a0a0", "borderRadius": 10, "color":"#fff" }
+        "style": { "fontSize": 15, "fontWeight": "bold", "padding": 20,  "backgroundColor":"#a0a0a0", "color":"#fff" }
 
     },
     {
@@ -91,54 +91,54 @@
             {
                 "type":"text",
                 "content":"One",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
             },
             {
                 "type":"text",
                 "content":"Two",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"THREE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"FOUR",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"FIVE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"Two",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"THREE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"FOUR",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             },
             {
                 "type":"text",
                 "content":"FIVE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 12 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
 
             }
         ]
