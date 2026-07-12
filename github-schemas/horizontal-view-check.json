@@ -79,6 +79,29 @@
         "style":{"marginRight":15,"marginLeft":15}
     },
     {
+        "type":"container",
+        "style":{
+            "backgroundColor":"#fff",
+            "padding":20,
+            "paddingBottom":40,
+            "marginTop":8
+        },
+        "children":[
+            {
+                "type": "input",
+                "placeholder": "FSSAI Number",
+                "props": {
+                    "keyboardType": "numeric",
+                    "required": true,
+                    "secureTextEntry":true,
+                    "errorText": "Valid number required",
+                    "helperText": "For product varificatio"
+                },
+                "style":{"marginTop":20}
+            }
+        ]
+    },
+    {
         "type":"text",
         "content":"HORIZONTAL SCROLL VIEW",
         "style": { "fontSize": 15, "fontWeight": "bold", "padding": 20,  "backgroundColor":"#a0a0a0", "color":"#fff" }
@@ -91,18 +114,42 @@
             {
                 "type":"text",
                 "content":"One",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
             },
             {
                 "type":"text",
                 "content":"Two",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
 
             },
             {
                 "type":"text",
                 "content":"THREE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
+            },
+            {
+                "type":"text",
+                "content":"FOUR",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
+            },
+            {
+                "type":"text",
+                "content":"FIVE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
+            },
+            {
+                "type":"text",
+                "content":"Two",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
+
+            },
+            {
+                "type":"text",
+                "content":"THREE",
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
 
             },
             {
@@ -114,31 +161,7 @@
             {
                 "type":"text",
                 "content":"FIVE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
-
-            },
-            {
-                "type":"text",
-                "content":"Two",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
-
-            },
-            {
-                "type":"text",
-                "content":"THREE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
-
-            },
-            {
-                "type":"text",
-                "content":"FOUR",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
-
-            },
-            {
-                "type":"text",
-                "content":"FIVE",
-                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f", "borderRadius": 5 }
+                "style": { "fontSize": 16, "fontWeight": "bold", "padding": 20, "marginRight":10, "backgroundColor":"#09f" }
 
             }
         ]
