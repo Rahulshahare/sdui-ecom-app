@@ -1,5 +1,6 @@
 {
   "type": "scrollView",
+  "keyboardAvoiding":true,
   "style": { "flex": 1, "backgroundColor": "#fff", "paddingBottom":40 },
   "children": [
     {
