@@ -113,6 +113,14 @@
             {
                 "type": "button",
                 "text": "SUBMIT NOW",
+                "action":{
+                        "type": "navigate",
+                        "screen": "SDUIScreen",
+                        "params": {
+                            "screenName": "bottom-sheet",
+                            "title": "bottomSheet"
+                        }
+                },
                 "style": {
                         "backgroundColor": "transparent",
                         "borderWidth": 1,
