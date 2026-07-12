@@ -64,4 +64,14 @@ export const CacheService = {
       Logger.error('Cache clear error:', error.message);
     }
   },
+
+  async getAllKeys() {
+    try {
+      const keys = await AsyncStorage.getAllKeys();
+      return keys.filter(key => key.startsWith(CACHE_PREFIX));
+    } catch (error) {
+      Logger.error('Cache getAllKeys error:', error.message);
+      return [];
+    }
+  },
 };
