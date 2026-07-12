@@ -37,8 +37,10 @@ export default function SDImage({ source, style, resizeMode = 'cover', placehold
         onLoadStart={() => setLoading(true)}
         onLoadEnd={() => setLoading(false)}
         onError={() => {
-          setLoading(false);
-          setError(true);
+           if (!error) {
+            setLoading(false);
+            setError(true);
+           }
         }}
         {...props}
       />
