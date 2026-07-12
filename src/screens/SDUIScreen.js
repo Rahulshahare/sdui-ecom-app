@@ -15,6 +15,10 @@ export default function SDUIScreen() {
   const [schema, setSchema] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
+  // Overlay states
+  const [bottomSheetVisible, setBottomSheetVisible] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const fetchSchema = useCallback(async (forceRefresh = false) => {
     if (!screenName) {
@@ -36,18 +40,75 @@ export default function SDUIScreen() {
 
   useEffect(() => { fetchSchema(); }, [fetchSchema]);
 
-  // 🔥 Hot reload with toggle
   const { isActive, toggle, refreshNow } = useSchemaHotReload(
     screenName,
     () => fetchSchema(true)
   );
 
+  // Custom handlers for overlays
+  const customHandlers = {
+    openBottomSheet: () => {
+      Logger.info('Opening bottom sheet');
+      setBottomSheetVisible(true);
+    },
+    closeBottomSheet: () => {
+      Logger.info('Closing bottom sheet');
+      setBottomSheetVisible(false);
+    },
+    openModal: () => {
+      Logger.info('Opening modal');
+      setModalVisible(true);
+    },
+    closeModal: () => {
+      Logger.info('Closing modal');
+      setModalVisible(false);
+    },
+    addToCart: (payload) => Logger.info('Adding to cart:', payload),
+    addToWishlist: (payload) => Logger.info('Adding to wishlist:', payload),
+  };
+
   const onAction = useCallback((action) => {
-    handleAction(action, navigation, {
-      addToCart: (payload) => Logger.info('Cart:', payload),
-      addToWishlist: (payload) => Logger.info('Wishlist:', payload),
-    });
+    handleAction(action, navigation, customHandlers);
   }, [navigation]);
+
+  // Inject overlay visibility into schema context
+  const renderWithOverlays = (node) => {
+    if (!node) return null;
+    
+    // Handle bottomSheet with dynamic visibility
+    if (node.type === 'bottomSheet') {
+      return (
+        <View key="bottomSheet-wrapper">
+          {renderScreen({
+            ...node,
+            props: {
+              ...node.props,
+              visible: bottomSheetVisible,
+              onDismiss: () => setBottomSheetVisible(false),
+            }
+          }, onAction)}
+        </View>
+      );
+    }
+    
+    // Handle modal with dynamic visibility
+    if (node.type === 'modal') {
+      return (
+        <View key="modal-wrapper">
+          {renderScreen({
+            ...node,
+            props: {
+              ...node.props,
+              visible: modalVisible,
+              onDismiss: () => setModalVisible(false),
+            }
+          }, onAction)}
+        </View>
+      );
+    }
+    
+    return renderScreen(node, onAction);
+  };
 
   if (loading) return (
     <View style={styles.center}>
@@ -66,9 +127,8 @@ export default function SDUIScreen() {
 
   return (
     <View style={styles.container}>
-      {schema && renderScreen(schema, onAction)}
+      {schema && renderWithOverlays(schema)}
       
-      {/* 🔥 Dev Toolbar — tap 🛠️ to open */}
       <DevToolbar
         screenName={screenName}
         onRefresh={refreshNow}
