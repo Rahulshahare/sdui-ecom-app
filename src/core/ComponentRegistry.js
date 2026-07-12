@@ -16,7 +16,8 @@ import SDCard from '../components/SDCard';
 import SDBadge from '../components/SDBadge';
 import SDInput from '../components/SDInput';
 import SDIcon from '../components/SDIcon';
-
+import SDBottomSheet from '../components/SDBottomSheet';
+import SDModal from '../components/SDModal';  
 const registry = {
   // Layout containers
   screen: SDContainer,
@@ -25,6 +26,8 @@ const registry = {
   horizontalScrollView: SDHorizontalScrollView,
   row: SDRow,
   column: SDColumn,
+  bottomSheet: SDBottomSheet,
+  modal: SDModal,
   
   // Basic elements
   text: SDText,

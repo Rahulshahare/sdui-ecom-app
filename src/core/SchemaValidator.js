@@ -4,7 +4,7 @@ export const SchemaValidator = {
   VALID_TYPES: [
     'screen', 'container', 'text', 'image', 'button',
     'list', 'productCard', 'scrollView', 'row', 'column',
-    'spacer', 'divider', 'card', 'badge', 'input','horizontalScrollView','icon',
+    'spacer', 'divider', 'card', 'badge', 'input','horizontalScrollView','icon', 'bottomSheet', 'modal'
   ],
 
   REQUIRED_FIELDS: {
