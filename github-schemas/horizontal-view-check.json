@@ -88,6 +88,14 @@
         },
         "children":[
             {
+                "type": "text",
+                "content": "Adding FSSAI certificate number",
+                "style": {
+                    "fontSize": 13,
+                    "color": "#666"
+                }
+            },
+            {
                 "type": "input",
                 "placeholder": "FSSAI Number",
                 "props": {
@@ -98,6 +106,22 @@
                     "helperText": "For product varificatio"
                 },
                 "style":{"marginTop":20}
+            },
+            {
+                "type": "button",
+                "text": "SUBMIT NOW",
+                "style": {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 1,
+                        "borderColor": "#007AFF",
+                        "padding": 16,
+                        "borderRadius": 12,
+                        "width": "100%",
+                        "alignItems": "center"
+                },
+                "textStyle": {
+                        "color": "#007AFF"
+                }
             }
         ]
     },
