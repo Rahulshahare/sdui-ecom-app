@@ -23,11 +23,6 @@
         "buildType": "apk"
       }
     }
-  },
-  "update": {
-    "staging":{
-      "channel":"staging"
-    },
-    "production": {}
   }
+
 }
