@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, View, ActivityIndicator, Text, StyleSheet } from 'react-native';
+import { Image, View, ActivityIndicator, Text, StyleSheet, Platform  } from 'react-native';
 
 /**
  * SDImage — Enhanced image with lazy loading, blur placeholder, error state
@@ -15,6 +15,7 @@ import { Image, View, ActivityIndicator, Text, StyleSheet } from 'react-native';
  *     "blurRadius": 5
  *   }
  * }
+ * 
  */
 export default function SDImage({ source, style, resizeMode = 'cover', placeholderColor, blurRadius, ...props }) {
   const [loading, setLoading] = useState(true);
@@ -23,13 +24,16 @@ export default function SDImage({ source, style, resizeMode = 'cover', placehold
   const imageSource = typeof source === 'string' ? { uri: source } : source;
   const bgColor = placeholderColor || '#f0f0f0';
 
+  // Web doesn't support blurRadius well, skip it
+  const effectiveBlurRadius = Platform.OS === 'web' ? 0 : (blurRadius || 0);
+
   return (
     <View style={[styles.container, { backgroundColor: bgColor }, style]}>
       <Image
         source={imageSource}
         style={[styles.image, style]}
         resizeMode={resizeMode}
-        blurRadius={loading ? (blurRadius || 0) : 0}
+        blurRadius={effectiveBlurRadius}
         onLoadStart={() => setLoading(true)}
         onLoadEnd={() => setLoading(false)}
         onError={() => {
